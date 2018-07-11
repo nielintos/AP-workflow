@@ -9,6 +9,21 @@ The workflow comprises several stages based on state-of-the-art methods:
 - Automatic clustering for unbiased detection of subpopulations - Phenograph
 - Upsampling of FCM events to extend results to the whole set of original events and files export
 
+## Citation
+If you find AP-workflow useful in your research, please consider citing:
+```
+@article{jimenez2018flow,
+  title={Flow Cytometry Data Preparation Guidelines for Improved Automated Phenotypic Analysis},
+  author={Jimenez-Carretero, Daniel and Ligos, Jos{\'e} M and Mart{\'\i}nez-L{\'o}pez, Mar{\'\i}a and Sancho, David and Montoya, Mar{\'\i}a C},
+  journal={The Journal of Immunology},
+  volume={200},
+  number={10},
+  pages={3319--3331},
+  year={2018},
+  publisher={American Association of Immunologists}
+}
+```
+
 ## Prerequisites
 The automated analysis pipeline was implemented as a script in Matlab and R.
 - Matlab R2017a:
