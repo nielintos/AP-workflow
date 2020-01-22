@@ -442,7 +442,9 @@ for itN=nT0:(nT0+nTimes-1)
         for kkl=1:length(clfiles)
             kkkk=load([clfiles(kkl).folder filesep clfiles(kkl).name]);
             kkkknames=fieldnames(kkkk);
-            kkkkdata=double(struct2array(kkkk));
+            %kkkkdata=double(struct2array(kkkk));
+			c = struct2cell(kkkk);
+			kkkkdata = double([c{:}]);
             if strncmpi(cl_names{kkl},'tsne',4)
                 t_res=[array2table(kkkkdata,'VariableNames',kkkknames),t_res];
             else
